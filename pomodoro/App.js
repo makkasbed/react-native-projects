@@ -14,22 +14,21 @@ export default class App extends React.Component{
                <Text style={styles.title}>Pomodoro</Text>
             </View>
             <ScrollView style={styles.timerList}>
-               <ToggleableTimerForm isOpen={true}>
+               <ToggleableTimerForm isOpen={false} />
                 <EditableTimer id="1"
                 title= "Water the plants"
-                project="House Chose"
+                project="House Chores"
                 elapsed="8986300"
                 isRunning
                 />
 
              <EditableTimer id="2"
-                title= "Water the plants2"
-                project="House Chose"
+                title= "Day 29 of Lose Belly Fat"
+                project="Living Fit"
                 elapsed="8986300"
                 editFormOpen
              />
             
-            </ToggleableTimerForm>
             </ScrollView>
          </View>
      );
